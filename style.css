@@ -1,0 +1,105 @@
+/* Estilos Globais */
+html {
+    background: #0CF25D;
+    color: #034159;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.principal {
+    background-color: #025951; /* Corrigido o erro de sintaxe anterior */
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+/* Navegação */
+nav {
+    background-color: #f2f7f8;
+    padding: 15px;
+    border-bottom: 2px solid #025E73;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h1 {
+    color: #025E73;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    flex-wrap: wrap; /* Permite quebrar linha no celular */
+}
+
+nav ul li a {
+    color: #025E73;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Conteúdo */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 30px;
+    text-align: center;
+}
+
+.imagemfoto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #025E73;
+    margin-bottom: 15px;
+}
+
+section {
+    width: 70%; /* Largura padrão para computador */
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #025E73;
+}
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+/* --- CONFIGURAÇÃO PARA CELULAR (MEDIA QUERY) --- */
+@media (max-width: 768px) {
+    section {
+        width: 90%; /* Aumenta a largura para não sobrar muito espaço nas laterais */
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav h1 {
+        font-size: 22px;
+    }
+
+    html {
+        font-size: 16px; /* Diminui um pouco a letra no celular */
+    }
+}
